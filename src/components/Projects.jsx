@@ -21,6 +21,38 @@ export default function Projects() {
                     </p>
                     <button className={styles.projectButton}>Ver mais</button>
                 </div>
+
+                <div className={styles.projectCard}>
+                    <h3 className={styles.projectName}>Projeto 3</h3>
+                    <p className={styles.projectDesc}>
+                        Breve descrição do projeto, tecnologias usadas e objetivo.
+                    </p>
+                    <button className={styles.projectButton}>Ver mais</button>
+                </div>
+
+                <div className={styles.projectCard}>
+                    <h3 className={styles.projectName}>Projeto 4</h3>
+                    <p className={styles.projectDesc}>
+                        Breve descrição do projeto, tecnologias usadas e objetivo.
+                    </p>
+                    <button className={styles.projectButton}>Ver mais</button>
+                </div>
+
+                <div className={styles.projectCard}>
+                    <h3 className={styles.projectName}>Projeto 5</h3>
+                    <p className={styles.projectDesc}>
+                        Breve descrição do projeto, tecnologias usadas e objetivo.
+                    </p>
+                    <button className={styles.projectButton}>Ver mais</button>
+                </div>
+
+                <div className={styles.projectCard}>
+                    <h3 className={styles.projectName}>Projeto 6</h3>
+                    <p className={styles.projectDesc}>
+                        Breve descrição do projeto, tecnologias usadas e objetivo.
+                    </p>
+                    <button className={styles.projectButton}>Ver mais</button>
+                </div>
                 
             </div>
         </section>
