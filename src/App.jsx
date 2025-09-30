@@ -1,6 +1,7 @@
 import Spline from '@splinetool/react-spline';
 import styles from './styles/app.module.css'
 import Header from './components/Header';
+import Footer from './components/Footer'
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
       <div className={styles.containerSegundo}>
         
       </div>
+      <Footer />
     </div>
   );
 }
