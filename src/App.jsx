@@ -9,8 +9,8 @@ import Footer from './components/Footer';
 export default function App() {
   return (
     <div className={styles.container}>
-      <div className={styles.containerPrimeiro}>
-        <Header />
+      <Header />
+      <div id='robot' className={styles.containerPrimeiro}>
         <Spline scene="https://prod.spline.design/Hl7MspNbBvzB031g/scene.splinecode" />
       </div>
       <Members />

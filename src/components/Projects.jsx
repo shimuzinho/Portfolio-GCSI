@@ -2,7 +2,7 @@ import styles from '../styles/projects.module.css';
 
 export default function Projects() {
     return (
-        <section className={styles.projectsSection}>
+        <section id='projects' className={styles.projectsSection}>
             <h2 className={styles.projectsTitle}>Projetos</h2>
 
             <div className={styles.projectsGrid}>

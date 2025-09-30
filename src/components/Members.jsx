@@ -5,7 +5,7 @@ import imgPedro from '../assets/image-Pedro.jpg';
 
 export default function Members() {
     return (
-        <div className={styles.members}>
+        <div id='members' className={styles.members}>
             <h1 className={styles.titleMembers}>Integrantes</h1>
             <div className={styles.containerCards}>
 
@@ -27,7 +27,7 @@ export default function Members() {
                     <img className={styles.imgPedro} src={imgPedro} />
                     <h2 className={styles.name}>Pedro Rossini</h2>
                     <h3 className={styles.subtitle}>Explorador de lógica e tecnologia</h3>
-                    <p>| React | Node.js | Python | C++ |</p>
+                    <p>Desenvolvedor FullStack | React | Node.js | Python | C++</p>
                 </div>
 
             </div>
