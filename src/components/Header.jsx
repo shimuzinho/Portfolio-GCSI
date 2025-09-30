@@ -16,6 +16,10 @@ export default function Header() {
     element.scrollIntoView({ behavior: 'smooth' });
   }
 
+  const scrollContact = () => {
+    const element = document.querySelector('#contact');
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
 
   return (
     <div className={styles.header}>
@@ -24,7 +28,7 @@ export default function Header() {
         <p onClick={scrollRobot} className={styles.optionsHeader}>Início</p>
         <p onClick={scrollMembers} className={styles.optionsHeader}>Integrantes</p>
         <p onClick={scrollProjects} className={styles.optionsHeader}>Projetos</p>
-        <p className={styles.optionsHeader}>Contato</p>
+        <p onClick={scrollContact} className={styles.optionsHeader}>Contato</p>
       </div>
       <button className={styles.buttonHeader}>Clicar</button>
     </div>
