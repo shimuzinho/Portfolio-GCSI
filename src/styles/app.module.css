@@ -16,9 +16,3 @@ body {
             rgba(20, 0, 40, 0.8) 40%,
             #000 80%);
 }
-
-.containerSegundo {
-    background-color: #03010A;
-    width: 100%;
-    height: 50vh;
-}
