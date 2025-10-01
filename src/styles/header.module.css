@@ -28,6 +28,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+.navMenu {
+  display: none;
+}
+
 .optionsHeader {
   position: relative;
   padding: 5%;
@@ -84,4 +88,28 @@
 .buttonHeader:active {
   transform: scale(0.97);
   box-shadow: 0 0 10px rgba(168, 85, 247, 0.7);
+}
+
+@media screen and (max-width: 740px) {
+  .navMenu {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  } 
+
+  .nav {
+    display: none;
+  }
+
+  .buttonHeader {
+    display: none;
+  }
+
+  .menuIcon {
+    display: block;
+  }
+
+  .dropdownMenu {
+    display: flex;
+  }
 }

@@ -50,6 +50,7 @@ export default function Header() {
       <button onClick={speakRobot} className={styles.buttonHeader}>
         Ativar Robô
       </button>
+      <h2 className={styles.navMenu}>☰</h2>
     </div>
   )
 }
