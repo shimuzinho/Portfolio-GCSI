@@ -1,10 +1,8 @@
 .contact {
-  background: linear-gradient(
-    to top,
-    #a955f7a3 0%,
-    rgba(20, 0, 40, 0.8) 40%,
-    #000 90%
-  );
+  background: linear-gradient(to top,
+      #a955f7a3 0%,
+      rgba(20, 0, 40, 0.8) 40%,
+      #000 90%);
   padding: 5%;
   text-align: center;
   color: #fff;
@@ -14,7 +12,7 @@
   font-size: 2em;
   margin-bottom: 5%;
   color: #ffffff;
-  text-shadow: 0 0 10px rgba(168,85,247,0.5);
+  text-shadow: 0 0 10px rgba(168, 85, 247, 0.5);
 }
 
 .contactForm {
@@ -25,7 +23,8 @@
   margin: 0 auto 30px;
 }
 
-.input, .textarea {
+.input,
+.textarea {
   background: #0b0114;
   border: 2px solid transparent;
   border-radius: 12px;
@@ -35,9 +34,10 @@
   transition: border 0.3s ease, box-shadow 0.3s ease;
 }
 
-.input:focus, .textarea:focus {
+.input:focus,
+.textarea:focus {
   border: 2px solid #a855f7;
-  box-shadow: 0 0 12px rgba(168,85,247,0.7);
+  box-shadow: 0 0 12px rgba(168, 85, 247, 0.7);
   outline: none;
 }
 
@@ -60,13 +60,13 @@
 
 .button:hover {
   transform: translateY(-2px) scale(1.05);
-  box-shadow: 0 0 15px rgba(168,85,247,0.9),
-              0 0 30px rgba(168,85,247,0.6);
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.9),
+    0 0 30px rgba(168, 85, 247, 0.6);
 }
 
 .button:active {
   transform: scale(0.97);
-  box-shadow: 0 0 10px rgba(168,85,247,0.7);
+  box-shadow: 0 0 10px rgba(168, 85, 247, 0.7);
 }
 
 .socials {
@@ -84,5 +84,5 @@
 
 .socials a:hover {
   color: #a855f7;
-  text-shadow: 0 0 8px rgba(168,85,247,0.8);
+  text-shadow: 0 0 8px rgba(168, 85, 247, 0.8);
 }

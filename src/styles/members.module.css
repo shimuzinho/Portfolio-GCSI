@@ -1,20 +1,22 @@
 .members {
-    background-color: #03010A;
+  background-color: #03010A;
 }
 
 .containerCards {
-    display: flex;
-    justify-content: space-around;
-    padding-bottom: 5%;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 5%;
 }
 
-.titleMembers{
-    text-align: center;
-    padding: 5%;
-    margin: 0%;
+.titleMembers {
+  text-align: center;
+  padding: 5%;
+  margin: 0%;
 }
 
-.cardGuilherme, .cardJenifer, .cardPedro {
+.cardGuilherme,
+.cardJenifer,
+.cardPedro {
   background: #03010A;
   border-radius: 20px;
   padding: 3% 5%;
@@ -28,30 +30,38 @@
   overflow: hidden;
 }
 
-.cardGuilherme::before, .cardJenifer::before, .cardPedro::before {
+.cardGuilherme::before,
+.cardJenifer::before,
+.cardPedro::before {
   content: "";
   position: absolute;
   top: -50%;
   left: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(circle at center, rgba(168,85,247,0.2), transparent 70%);
+  background: radial-gradient(circle at center, rgba(168, 85, 247, 0.2), transparent 70%);
   transform: rotate(45deg) scale(0);
   transition: transform 0.5s ease;
   pointer-events: none;
 }
 
-.cardGuilherme:hover::before, .cardJenifer:hover::before, .cardPedro:hover::before {
+.cardGuilherme:hover::before,
+.cardJenifer:hover::before,
+.cardPedro:hover::before {
   transform: rotate(45deg) scale(1);
 }
 
-.cardGuilherme:hover, .cardJenifer:hover, .cardPedro:hover {
+.cardGuilherme:hover,
+.cardJenifer:hover,
+.cardPedro:hover {
   transform: translateY(-5px) scale(1.05);
-  box-shadow: 0 0 25px rgba(168, 85, 247, 0.8), 
-              0 0 50px rgba(168, 85, 247, 0.5);
+  box-shadow: 0 0 25px rgba(168, 85, 247, 0.8),
+    0 0 50px rgba(168, 85, 247, 0.5);
 }
 
-.imgGuilherme, .imgJenifer, .imgPedro {
+.imgGuilherme,
+.imgJenifer,
+.imgPedro {
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -61,7 +71,9 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.cardGuilherme:hover .imgGuilherme, .cardJenifer:hover .imgJenifer, .cardPedro:hover .imgPedro {
+.cardGuilherme:hover .imgGuilherme,
+.cardJenifer:hover .imgJenifer,
+.cardPedro:hover .imgPedro {
   transform: scale(1.1);
   box-shadow: 0 0 15px rgba(168, 85, 247, 0.8);
 }
@@ -78,7 +90,9 @@
   color: #c4b5fd;
 }
 
-.cardGuilherme p, .cardJenifer p, .cardPedro p {
+.cardGuilherme p,
+.cardJenifer p,
+.cardPedro p {
   font-size: 0.85em;
   line-height: 1.3;
   color: #ddd;
@@ -90,7 +104,9 @@
     flex-wrap: wrap;
   }
 
-  .cardGuilherme, .cardJenifer, .cardPedro {
+  .cardGuilherme,
+  .cardJenifer,
+  .cardPedro {
     width: 220px;
   }
 }
@@ -102,12 +118,16 @@
     gap: 30px;
   }
 
-  .cardGuilherme, .cardJenifer, .cardPedro {
+  .cardGuilherme,
+  .cardJenifer,
+  .cardPedro {
     width: 80%;
     max-width: 350px;
   }
 
-  .imgGuilherme, .imgJenifer, .imgPedro {
+  .imgGuilherme,
+  .imgJenifer,
+  .imgPedro {
     width: 90px;
     height: 90px;
   }
@@ -119,12 +139,16 @@
     padding: 8% 2%;
   }
 
-  .cardGuilherme, .cardJenifer, .cardPedro {
+  .cardGuilherme,
+  .cardJenifer,
+  .cardPedro {
     width: 95%;
     padding: 8% 5%;
   }
 
-  .imgGuilherme, .imgJenifer, .imgPedro {
+  .imgGuilherme,
+  .imgJenifer,
+  .imgPedro {
     width: 80px;
     height: 80px;
   }
@@ -137,7 +161,9 @@
     font-size: 0.8em;
   }
 
-  .cardGuilherme p, .cardJenifer p, .cardPedro p {
+  .cardGuilherme p,
+  .cardJenifer p,
+  .cardPedro p {
     font-size: 0.75em;
   }
 }

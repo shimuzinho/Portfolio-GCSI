@@ -3,7 +3,7 @@ import styles from '../styles/header.module.css';
 export default function Header() {
   const scrollRobot = () => {
     const element = document.querySelector('#robot');
-    element.scrollIntoView({ behavior: 'smooth'});
+    element.scrollIntoView({ behavior: 'smooth' });
   }
 
   const scrollMembers = () => {

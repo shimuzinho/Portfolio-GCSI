@@ -1,23 +1,23 @@
 import styles from '../styles/contact.module.css';
 
-export default function Contact () {
+export default function Contact() {
     return (
         <section id='contact' className={styles.contact}>
             <h2 className={styles.contactTitle}>Contato</h2>
-            
+
             <form className={styles.contactForm}>
-                <input 
-                    type="text" 
-                    placeholder="Seu nome" 
-                    className={styles.input} 
+                <input
+                    type="text"
+                    placeholder="Seu nome"
+                    className={styles.input}
                 />
-                <input 
-                    type="email" 
-                    placeholder="Seu e-mail" 
-                    className={styles.input} 
+                <input
+                    type="email"
+                    placeholder="Seu e-mail"
+                    className={styles.input}
                 />
-                <textarea 
-                    placeholder="Sua mensagem" 
+                <textarea
+                    placeholder="Sua mensagem"
                     className={styles.textarea}
                 />
                 <button type="submit" className={styles.button}>
