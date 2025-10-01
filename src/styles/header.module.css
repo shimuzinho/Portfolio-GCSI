@@ -90,7 +90,38 @@
   box-shadow: 0 0 10px rgba(168, 85, 247, 0.7);
 }
 
+.dropdownMenu {
+  position: absolute;
+  top: 55px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.209);
+  backdrop-filter: blur(8px);
+  border-radius: 8px;
+  padding: 10px 30px;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 9;
+  display: none;
+}
+
+.dropdownItem {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dropdownItem:hover {
+  color: #a855f7;
+  transform: translateX(5px);
+}
+
 @media screen and (max-width: 740px) {
+  .dropdownMenu{
+    display: flex;
+  }
+  
   .navMenu {
   margin: 0;
   padding: 0;

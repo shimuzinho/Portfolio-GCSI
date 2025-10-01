@@ -1,6 +1,9 @@
 import styles from '../styles/header.module.css';
+import { useState } from 'react';
 
 export default function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   const scrollRobot = () => {
     const element = document.querySelector('#robot');
     element.scrollIntoView({ behavior: 'smooth' });
@@ -50,7 +53,16 @@ export default function Header() {
       <button onClick={speakRobot} className={styles.buttonHeader}>
         Ativar Robô
       </button>
-      <h2 className={styles.navMenu}>☰</h2>
+      <h2 className={styles.navMenu} onClick={() => setMenuOpen(!menuOpen)}>☰</h2>
+      {menuOpen && (
+  <div className={styles.dropdownMenu}>
+    <p onClick={scrollRobot} className={styles.dropdownItem}>Início</p>
+    <p onClick={scrollMembers} className={styles.dropdownItem}>Integrantes</p>
+    <p onClick={scrollProjects} className={styles.dropdownItem}>Projetos</p>
+    <p onClick={scrollContact} className={styles.dropdownItem}>Contato</p>
+  </div>
+)}
+
     </div>
   )
 }
