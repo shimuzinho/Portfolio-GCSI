@@ -7,7 +7,7 @@ export default function Projects() {
 
             <div className={styles.projectsGrid}>
                 <div className={styles.projectCard}>
-                    <h3 className={styles.projectName}>Projeto 1</h3>
+                    <h3 className={styles.projectName}>DevNotes</h3>
                     <p className={styles.projectDesc}>
                         Breve descrição do projeto, tecnologias usadas e objetivo.
                     </p>
@@ -15,7 +15,7 @@ export default function Projects() {
                 </div>
 
                 <div className={styles.projectCard}>
-                    <h3 className={styles.projectName}>Projeto 2</h3>
+                    <h3 className={styles.projectName}>WeatherWise</h3>
                     <p className={styles.projectDesc}>
                         Breve descrição do projeto, tecnologias usadas e objetivo.
                     </p>
@@ -23,7 +23,7 @@ export default function Projects() {
                 </div>
 
                 <div className={styles.projectCard}>
-                    <h3 className={styles.projectName}>Projeto 3</h3>
+                    <h3 className={styles.projectName}>Shoply</h3>
                     <p className={styles.projectDesc}>
                         Breve descrição do projeto, tecnologias usadas e objetivo.
                     </p>
@@ -31,7 +31,7 @@ export default function Projects() {
                 </div>
 
                 <div className={styles.projectCard}>
-                    <h3 className={styles.projectName}>Projeto 4</h3>
+                    <h3 className={styles.projectName}>TaskFlow</h3>
                     <p className={styles.projectDesc}>
                         Breve descrição do projeto, tecnologias usadas e objetivo.
                     </p>
@@ -39,7 +39,7 @@ export default function Projects() {
                 </div>
 
                 <div className={styles.projectCard}>
-                    <h3 className={styles.projectName}>Projeto 5</h3>
+                    <h3 className={styles.projectName}>FoodieFinder</h3>
                     <p className={styles.projectDesc}>
                         Breve descrição do projeto, tecnologias usadas e objetivo.
                     </p>
@@ -47,14 +47,13 @@ export default function Projects() {
                 </div>
 
                 <div className={styles.projectCard}>
-                    <h3 className={styles.projectName}>Projeto 6</h3>
+                    <h3 className={styles.projectName}>PortfolioPro</h3>
                     <p className={styles.projectDesc}>
                         Breve descrição do projeto, tecnologias usadas e objetivo.
                     </p>
                     <button className={styles.projectButton}>Ver mais</button>
                 </div>
-                
             </div>
-        </section>
+        </section >
     )
 }
