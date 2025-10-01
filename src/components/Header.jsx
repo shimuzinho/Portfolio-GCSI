@@ -21,6 +21,23 @@ export default function Header() {
     element.scrollIntoView({ behavior: 'smooth' });
   }
 
+  const speakRobot = () => {
+    const utterance = new SpeechSynthesisUtterance("Bem-vindo ao nosso portfólio, humano.");
+    utterance.rate = 0.7;
+    utterance.pitch = 0.3;
+    utterance.volume = 1;
+
+    const voices = window.speechSynthesis.getVoices();
+    const robotVoice = voices.find(voice =>
+      voice.name.toLowerCase().includes("male") ||
+      voice.name.toLowerCase().includes("zira") ||
+      voice.name.toLowerCase().includes("google")
+    );
+    if (robotVoice) utterance.voice = robotVoice;
+
+    window.speechSynthesis.speak(utterance);
+  };
+
   return (
     <div className={styles.header}>
       <h1 className={styles.titleHeader}>Portfolio</h1>
@@ -30,7 +47,9 @@ export default function Header() {
         <p onClick={scrollProjects} className={styles.optionsHeader}>Projetos</p>
         <p onClick={scrollContact} className={styles.optionsHeader}>Contato</p>
       </div>
-      <button className={styles.buttonHeader}>Clicar</button>
+      <button onClick={speakRobot} className={styles.buttonHeader}>
+        Ativar Robô
+      </button>
     </div>
   )
 }
